@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>tableelement</title>
+</head>
+<body>
+    <table> 
+        <style>
+            table,th,td{
+                border: 1px solid #333;
+                border-collapse:collapse;
+            }
+            th,td{
+                padding:10px;   
+            }
+
+            thead{
+                background-color:#eee;
+            }
+            tfoot{
+                background-color:aqua;
+            }
+            .right{
+                text-align: right;
+            }
+            .center{
+                text-align: center;
+            }
+            caption{
+                font-size:1.5em;
+            }
+        </style>
+        <!--테이블 제목 (요약)-->
+        <caption>학생 성적 테이블</caption>
+        <!--상단 행들-->
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>국어</th>
+                <th>영어</th>
+                <th>수학</th>
+                <th>총점</th>
+                <th>평균</th>
+            </tr>
+        </thead>
+        <!--테이블 데이터 행들-->
+        <tbody>
+            <tr>
+                <td class="center">홍길동</td>
+                <td class="right">85</td>
+                <td class="right">90</td>
+                <td class="right">80</td>
+                <td class="right">255</td>
+                <td class="right">85.0</td>
+            </tr>
+             <tr>
+                <td class="center">
+                    김철수
+                </td>
+                <td class="right">75</td>
+                <td class="right">80</td>
+                <td class="right">70</td>
+                <td class="right">225</td>
+                <td class="right">75.0</td>
+
+             </tr>
+
+             <tr>
+                <td class="center">이영희</td>
+                <td class="right">95</td>
+                <td class="right">100</td>
+                <td class="right">90</td>
+                <td class="right">285</td>
+                <td class="right">95.0</td>
+             </tr>
+        </tbody>
+        <!--테이블 통계-->
+        <tfoot>
+            <tr>
+                <th>과목총점</th>
+                <td>  270  </td>
+                <td>   270 </td>
+                <td>   270 </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--행렬 합치기-->
+    <!--
+    1. 행을 합칠때는 rowspan을 사용하고 다른  tr 내에 td를 개수만큼 삭제
+    2. 열을 합칠때는 colspan를 사용하고 다른 td 내에 를 갯수만큼 삭제 -->
+        <table>
+        <caption>행렬 합치기 예제</caption>
+        <thead> 
+            <tr>
+        
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+   
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td colspan="2">0</td> 
+                
+                <td>0</td>
+                <td rowspan="2">0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        </tr>
+
+        </table></body>
+</html>
+
+<hr>
+
+<!--tbody excercise-->
+ 
+
+        <table>      
+ 
+            <tr>
+                <th colspan="2">0</th>
+                <th>0</th>
+                <th>0</th>
+   
+            </tr>
+
+            <tr>
+        
+                <th rowspan="2">0</th>
+                <th>0</th>
+                <th>0</th>
+                <th>0</th>
+   
+            </tr>
+            <td rowspan="2"></td>
+            <td>0</td>
+            <td rowspan="2">0</td>
+            <td rowspan="2">0</td>
+            <td colspan="2" rowspan="2">0</td>
+            <td rowspan="2">0</td>
+            <td rowspan="2">0</td>
+ 
+            <td>0</td>
+            <td>0</td>
+             <td colspan="2" rowspan="2">0</td>
+            <td>0</td>
+            <td>0</td>
+            
+
+        </table> <tr>
+        <table>
+             <td colspan ="2" rowspan="2"0></td> 
+             <td colspan ="2" ></td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </table>
+
+ 
+    </tr>
+        <tr>
+        <table>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>o</td>
+        </table>
+ 
+    </tr>
+
+    <hr>
+
+    <>

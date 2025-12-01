@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multimediaelement</title>
+    <style>
+        img.audio,video{
+            display:block;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <!--이미지-->
+    <p>
+        <img src="flower.png" width ="500" height="600" alt="아름다운 주황 핑크 줄무늬를 가진 웃고 있는 꽃">
+    </p>
+
+    <!--사운드-->
+    <audio controls preload="none"autoplay loop> 
+
+        <source src="hype.mp3">
+</audio>
+
+    <!--비디오-->
+    <video poster="owl.jpg" autoplay loop controls>
+        <source src="cat.mp4">
+    </video>
+
+    <!--유투브 비디오-->
+    <iframe width="1431" height="805" src="iframe width=1310" height="737" src="https://www.youtube.com/embed/i0FN-OwJ7QI" title="HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+</body>
+</html>

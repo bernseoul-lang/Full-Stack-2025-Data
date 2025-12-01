@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formelement</title>
+    <style>
+        input{
+            display: block;
+        }
+        input[type='image']{
+            width:200px;
+        }
+        
+
+</style>
+</head>
+<body>
+    <!--form 요소: 서버에 데이터를 전송하기 위한 컨테이너
+    action 속성 : 데이터를 전송할 URL
+    method 속성: 요청 메소드(request method), get이 기본값 
+    -->
+    <form action="10.formelement.html" method="get">
+        <input type="button" value="눌러">
+        <input type="checkbox" name="hobby1" value="swimming">swimming
+        <input type="checkbox" name="hobby1" value="reading">reading
+        <input type="checkbox" name="hobby1" value="music">music 
+        <input type="color" name="color">
+        <input type="date" name="date">
+        <input type="datetime-local" name="datetime-local">
+        <input type="email" name="email">
+        <input type="file" name="file">
+        <input type="hidden" name="hidden" value="1233">
+        <input type="image" name="image" src="flower.png">
+        <input type="month" name="month">
+        <input type="number" name="number" value="1">
+        <input type="password" name="password">
+        <input type="radio" name="radio" value="apple">사과
+        <input type="radio" name="radio" value="peach">peach
+        <input type="radio" name="radio" value="grape">grape
+        <input type="range" name="range">
+        <input type="search" name="search">
+        <input type="tel" name="tel">
+        <input type="text" name="text">
+        <input type="time" name="time">
+        <input type="url" name="url">
+        <input type="week" name="week">
+        <input type="month" name="month">
+        
+        <select name="select">
+
+            <optgroup label="fruit">
+                <option value="apple"> Apple</option>
+                <option value="peach"> 복숭아 </option>
+                <option value="grape"> 포도 </option>
+                </optgroup>
+                <optgroup label ="동물">
+                    <option value="lion">사자</option>
+                    <option value="tiger">호랑이</option>
+                    <option value="deer">사슴</option>
+                
+                   
+                </optgroup>
+  
+        </select>
+
+        <textarea name ="textarea" rows="10" cols="20">이 곳에 입력하세요!</textarea>
+    
+        <fieldset>
+            <legend>인적사항</legend>
+            <p>이름:<input type="text" name="name"></p>
+            <p>전화번호:<input type="tel" name="tel"></p>
+        </fieldset>
+        <fieldset>
+            <legend>경력사항</legend>
+            <p>최종학력:<input type="text" name="school"></p>
+            <p>경력연수: <input type="number" name="careeryear"></p>
+            
+        </fieldset>
+    <input type="reset" value="초기화">
+    <input type="submit" value="전송">
+    
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
