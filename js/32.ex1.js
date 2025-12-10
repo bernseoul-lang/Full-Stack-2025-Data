@@ -11,7 +11,9 @@
 
  
 
+//풀이 1: innerHTML사용 
 
+//풀이 2: createElement 사용 
 
 // 1. 과일 이름 배열로 준비
 const fruits = ['사과', '딸기', '포도', '복숭아'];
